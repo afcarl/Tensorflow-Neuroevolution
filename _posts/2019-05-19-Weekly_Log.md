@@ -4,22 +4,49 @@ title: Development Log of Week 1 (13.-19. May 2019)
 author: Paul Pauls
 ---
 
-* Created and set up project repository and development environment
-
-* Created and set up development log
-
-* Processed phone call notes and created extensive private notes, roadmap and ToDos
-
-* I studied up on Tensorflow and existing Reinforcement Learning Architectures (Explicitely those of Tensorforce and Tensorlayer as they are closest to the project) 
-
-* Read research papers 'Large Scale Evolution of Image Classifiers' and 'Regularized Evolution for Image Classifier Architecture Search' in detail as those are the Google Brain research papers recommended by Rezsa.
-
-* Future Work: Agreed with Rezsa that the next two weeks until the official start of GSoC 2019 on the 27th. of May shall be spent planning, learning and designing the TF-Neuroevolution framework architecture to enable a better final product
+* _Task_: Created and set up project repository, development environment and development log
 
 
+* _Task_: Processed phone call notes and created extensive private notes, roadmap and ToDos
 
-* Task: Read into existing Neuroevolution/NEAT projects to study their architecture (especially NEAT-Python) and again read more into traditional reinforcement learning architectures.
- 
-* Task: Created an architecture-draft of a basic evolutionary algorithm / reinforcement-learning architecture. I expect it to be somewhat presentable/discussable tomorrow
 
+* _Task_: Read up on Tensorflow and read into Architectures of the following Reinforcement Learning Frameworks to check reference work of others:
+  - Tensorforce
+  - Tensorlayer
+  - Deepmind RTFL
+  - Google Dopamine
+  - OpenAI Baselines
+  - RLLib
+
+
+* _Task_: Created first architecture-drafts of basic evolutionary algorithm / reinforcement-learning architectures. Will upload in the coming days when matured enough.
+
+
+* _Research_: Studied up on the following Research papers:
+  - 'Large Scale Evolution of Image Classifiers' 
+  - 'Regularized Evolution for Image Classifier Architecture Search'
+  - 'Neuroevolution: From Architectures to Learning'
+  - 'The Age of Analog Networks'
+
+
+* _Thought_: Possible Big-Picture Project Milestones:
+  - Implementation of a basic Neuroevolution framework in TF 2.0 that maximizes
+    in performance and offers drop-in implementation of various specific
+    Neuroevolution algorithms
+  - Implementation of various specific Neuroevolution algortihms that are fitted to the 
+    created Neuroevolution framework. Possible Algorithms: NEAT, HyperNEAT,
+    ES-HyperNEAT, Novelty-Search, CoDeepNEAT, etc
+  - Extensive Documentation of framework 
+  - Extensive Addition of training examples with established RL test environments
+  - Extensive test-coverage
+  - Visualization of Neuroevolution process and progress via Tensorboard
+  - Possible Integration into Tensorflow Ecosystem once it is of sufficient
+    quality
+
+
+* _Future Work_: Research to read:
+  - [Research by Claudio Mattiussi](https://sites.google.com/site/claudiomattiussi/Publications), especially his PhD Thesis 'Evolutionary Synthesis of Analog Networks'
+
+
+* _Future Work_: Further read into established RL architectures and brainstorm first drafts of the Tensorflow-Neuroevolution architecture
 

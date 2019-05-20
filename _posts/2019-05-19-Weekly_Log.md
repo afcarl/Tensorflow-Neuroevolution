@@ -19,7 +19,16 @@ author: Paul Pauls
   - RLLib
 
 
-* _Task_: Created first architecture-drafts of basic evolutionary algorithm / reinforcement-learning architectures. Will upload in the coming days when matured enough.
+* _Task_: Read into existing NEAT/Neuroevolution frameworks to check reference work and analysed their strengths and weaknesses:
+  - Original Neat
+  - NEAT-Python
+  - Tensorflow-Neat
+
+
+* _Task_: Created first presentable architecture-draft of the Tensorflow-Neuroevolution Framework and uploaded to dedicated github branch. [See here](https://github.com/PaulPauls/Tensorflow-Neuroevolution/tree/architecture-draft-1).
+
+
+* _Thought_: As of now is most of the 'core neuroevolution' functionality (create_genomes, mutate_genomes, select_genomes, speciate_genomes) outsourced into the implementation of the algorithm itself (neuroevolution.algorithms.NEAT). Once I will implement more Neuroevolution algorithms and the common processes between the same functions of two different ne-algorithms become clearer, will I implement those core functions in the core frameworks 'population' module to minimize code replication and decomplexify the algorithms.
 
 
 * _Research_: Studied up on the following Research papers:
@@ -27,6 +36,7 @@ author: Paul Pauls
   - 'Regularized Evolution for Image Classifier Architecture Search'
   - 'Neuroevolution: From Architectures to Learning'
   - 'The Age of Analog Networks'
+  - 'Efficient Evolution of Neural Networksthrough Complexification' (Kenneth O'Stanley's dissertation)
 
 
 * _Thought_: Possible Big-Picture Project Milestones:

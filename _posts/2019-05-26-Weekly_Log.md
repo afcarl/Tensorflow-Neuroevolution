@@ -4,7 +4,8 @@ title: Development Log of Week 2 (20.-26. May 2019)
 author: Paul Pauls
 ---
 
-* _Assignmet_: Main assignment of this week is to research and discuss all available encoding schemes and their advantages and disadvantages.
+
+* _Task_: Researched 30+ papers about possible encoding schemes and algorithms (if closely connected) and made a pro/con list about them. [Shared Document here](https://docs.google.com/document/d/1jHZRAmFRMX-4Dly267cV7DKco2pN2UJbhXbu28uuhP4)
 
 
 * _Thoughts_: The neuroevolution research community has largely moved away from evolving  weights through evolution as proposed in the original NEAT algorithm and has moved to modern and very powerful differential techniques like backpropagation.

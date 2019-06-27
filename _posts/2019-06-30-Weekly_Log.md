@@ -15,10 +15,10 @@ author: Paul Pauls
 
 
 * _Issues and ToDos with Framework_:
-  - [ ]: Need to check if adding layers retrospectively in KerasLayer encoding is properly solved by rebuilding layers or e.g. if model also needs to be rebuilt
-  - [ ]: Fix Bug: That in YANA algorithm the ids of the genomes seem to randomly change
-  - [ ]: Implement proper MultiAgent usage and environment
-  - [ ]: Implement proper logging
-  - [ ]: Implement OpenAI Gym Cartpole Environment
+  - Need to check if adding layers retrospectively in KerasLayer encoding is properly solved by rebuilding layers or e.g. if model also needs to be rebuilt
+  - Fix Bug: That in YANA algorithm the ids of the genomes seem to randomly change
+  - Implement proper MultiAgent usage and environment
+  - Implement proper logging
+  - Implement OpenAI Gym Cartpole Environment
 
 

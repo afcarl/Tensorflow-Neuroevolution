@@ -76,9 +76,9 @@ see Github _Issues_ tracker: [here](https://github.com/PaulPauls/Tensorflow-Neur
 
 #### ToDo Collection ####
 
-* [ ] Extensively test (e.g. all possible cfg parametes) and bug fix the framework.
+* [X] Extensively test (e.g. all possible cfg parametes) and bug fix the framework.
 
-* [ ] Differentiate between neat-original and neat-variant by creating different algorithm classes.
+* [X] Differentiate between neat-original and neat-variant by creating different algorithm classes.
     * To create neat-original: only use linear activations; fix node biases to 0; exclude nodes from the weight difference distance calculation; remove species elitism
     * To create neat-variant:
         * parameterize as many aspects of the current neat as possible
@@ -87,9 +87,9 @@ see Github _Issues_ tracker: [here](https://github.com/PaulPauls/Tensorflow-Neur
 
 * [ ] Implement more OpenAI Gym environments (see [here](https://github.com/openai/gym/wiki/Leaderboard))
 
-* [ ] Reimplement YANA, renaming it 'TopologyEvolvingWeightTraining' (TEWT) algorithm, by adjusting NEAT to evolve/train weights via Tensorflow backpropagation.
+* [X] Reimplement YANA, renaming it 'TopologyEvolvingWeightTraining' (TEWT) algorithm, by adjusting NEAT to evolve/train weights via Tensorflow backpropagation.
 
-* [ ] Reimplement Weight Training option to the XOR environment, differentiating between the two environments' eval funtions via constructor parameter. Earlier implementation discarded due to architecture overhaul.
+* [X] Reimplement Weight Training option to the XOR environment, differentiating between the two environments' eval funtions via constructor parameter. Earlier implementation discarded due to architecture overhaul.
 
 * [ ] Implement more extensive tests and extensively bug test environment. Integrate tests with checks-API.
 
@@ -108,6 +108,13 @@ see Github _Issues_ tracker: [here](https://github.com/PaulPauls/Tensorflow-Neur
 
 #### Version History ####
 
+> 25. Oct 2019 - Version 0.1
+> * Fix Errors in NEAT causing CircularDependencies when crossing over or increasing the population size unexpectently
+> * Introduce 'NEAT-Variant', which allows to significantly enhance and/or differ from the original NEAT.
+> * Add Topology-ID recording to NEAT-Variant
+> * Add Weight Training XOR environment for NE algorithms that train the weights instead of mutating them; Add test for this environment
+> * Introduce the 'Topology Evolving Weight Training' (TEWT) Algorithm, taking over all specification from NEAT except for training its weight in a Weight-training environment instead of mutating them
+
 > 20. Oct 2019 - Version _beta_
 > * Implement significantly sped up non-trainable DirectEncodingModel, achieving significant sped up but not being compatible with the rest of Tensorflows infrastructure
 > * Reimplement CartPole Environment
@@ -122,13 +129,6 @@ see Github _Issues_ tracker: [here](https://github.com/PaulPauls/Tensorflow-Neur
 > * Overhaul the population class, saving its genomes in hashtables now and accessing them via keys, saving resources
 > * Switch the logging method to abseil-py, as recommended for TF 2.0
 > * Extensively documenting everything, extensively updating README and introducing new 'documentation' folder
-
-> 22. Aug 2019 - Version _alpha_
-> * Fix Bug where direct-encoding model uses default_activation for out_activation
-> * Minor refactoring to decrease coupling as well as clarify and optimize code
-> * Add early_stop functionality to XOR environment
-> * Add extensive inline documentaion
-> * Publish ToDo collection, Bugs and Architecture Documentation
 
 
 
